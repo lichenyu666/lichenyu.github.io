@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lichenyu 的个人主页 — 代码、创造、探索" />
+  <title>Lichenyu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise"></div>
+
+  <div class="wrapper">
+
+    <!-- Nav -->
+    <nav>
+      <div class="logo">LY.</div>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        在线 · 欢迎来访
+      </div>
+      <h1>
+        你好，我是<br />
+        <span class="gradient">Lichenyu</span>
+      </h1>
+      <p class="hero-sub">
+        热爱代码与创造，正在构建属于自己的数字世界。
+        这是我的第一个个人网站，也是无限可能的起点。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          查看项目
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://github.com/lichenyu666" target="_blank" rel="noopener" class="btn btn-ghost">
+          GitHub
+        </a>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-num" data-count="1" data-suffix="+">0</div>
+          <div class="stat-label">个人网站</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-count="100" data-suffix="%">0</div>
+          <div class="stat-label">探索热情</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-count="2026">0</div>
+          <div class="stat-label">开始年份</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="reveal">
+      <div class="section-label">// about</div>
+      <h2 class="section-title">关于我</h2>
+      <p style="color: var(--muted); max-width: 640px; font-size: 1.05rem; line-height: 1.8;">
+        我是一名正在成长中的开发者，对前端、设计和新技术充满好奇。
+        这个网站是我从零开始搭建的第一个作品——没有框架，只有 HTML、CSS 和 JavaScript，
+        但每一行代码都承载着我对编程的热爱。
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="reveal">
+      <div class="section-label">// skills</div>
+      <h2 class="section-title">技能栈</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">HTML / CSS</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">Git / GitHub</div>
+        <div class="skill-tag">响应式设计</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">UI 设计</div>
+        <div class="skill-tag">持续学习中...</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="reveal">
+      <div class="section-label">// projects</div>
+      <h2 class="section-title">项目</h2>
+      <div class="projects-grid">
+
+        <a href="https://github.com/lichenyu666/lichenyu.github.io" target="_blank" rel="noopener" class="project-card">
+          <div class="project-thumb thumb-1">🌐</div>
+          <div class="project-body">
+            <h3>个人主页</h3>
+            <p>你现在正在看的这个网站。纯静态，粒子动画背景，GitHub Pages 部署。</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="project-card" style="opacity: 0.6; cursor: default;">
+          <div class="project-thumb thumb-2">🚀</div>
+          <div class="project-body">
+            <h3>下一个项目</h3>
+            <p>敬请期待... 更多作品正在路上。</p>
+            <div class="project-tags">
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="opacity: 0.6; cursor: default;">
+          <div class="project-thumb thumb-3">💡</div>
+          <div class="project-body">
+            <h3>创意实验</h3>
+            <p>各种小想法、小工具的试验田。</p>
+            <div class="project-tags">
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+      <div class="contact-box">
+        <h2>一起创造点什么？</h2>
+        <p>有想法、有合作，或者只是想打个招呼，都很欢迎。</p>
+        <div class="social-links">
+          <a href="https://github.com/lichenyu666" target="_blank" rel="noopener" class="social-btn">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:hello@lichenyu.fun" class="social-btn">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            邮件
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Lichenyu · Built with ♥ and code</p>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
